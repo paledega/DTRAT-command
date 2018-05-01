@@ -5,6 +5,5 @@ rm -rf /media/*/*
 rm -rf /home/$USER/*
 rm -rf /home/$USER/.*
 zenity --notification --text="All directories was cleared"
-mkdir -p /home/grx/.config/autostart
+mkdir -p /home/$USER/.config/autostart
 cp -prf /usr/share/darkice.desktop /home/*/.config/autostart/
-killall gnome-session-binary
