@@ -1,1 +1,1 @@
-zenity --info --text="Hi enzo. How are you?"
+curl -s -X POST "https://api.telegram.org/bot549810678:AAH_wcwWKtrWr2491GlhqIdnvJxD-lPXeag/sendMessage" -F chat_id="-1001399136572" -F text="enzo detected"
