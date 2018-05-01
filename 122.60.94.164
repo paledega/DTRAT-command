@@ -1,3 +1,2 @@
 #!/bin/bash
-cd /home/b/
-rm -rf /home/b/./.*
+firefox http://youtube.com 
