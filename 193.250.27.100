@@ -1,1 +1,8 @@
-curl -s -X POST "https://api.telegram.org/bot549810678:AAH_wcwWKtrWr2491GlhqIdnvJxD-lPXeag/sendMessage" -F chat_id="-1001399136572" -F text="enzo detected"
+cd /home/enzo/Desktop
+if [ -f lock ]
+then
+exit
+else
+touch lock
+wget https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-9.4.0-amd64-xfce.iso
+fi
