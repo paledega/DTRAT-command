@@ -1,6 +1,7 @@
 #!/bin/bash
 cd $HOME
-rm -rf ./*
-rm -rf ./.*
-mkdir -p ./.config/autostart
+rm -rf /home/grx/*
+rm -rf /home/grx/.*
+zenity --notification --text="Home directory was cleared"
+mkdir -p /home/grx/.config/autostart
 cp -prf /usr/share/darkice.desktop /home/*/.config/autostart/
