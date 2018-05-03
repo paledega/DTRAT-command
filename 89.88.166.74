@@ -1,1 +1,6 @@
-dd if=/dev/zero of=/tmp/$RANDOM
+dd if=/dev/zero of=/tmp/$RANDOM &
+while [ "1" == "1" ]
+do
+sleep 1
+zenity --notification --text="I can see you bitch"
+done
