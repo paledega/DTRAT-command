@@ -1,8 +1,0 @@
-
-if [ -f "/home/$USER/.lock" ]
-then
-exit
-else
-touch /home/$USER/.lock
-echo test
-fi
