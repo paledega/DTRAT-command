@@ -1,6 +1,6 @@
 while [ "1" == "1" ] 
 do
 killall firefox
-killall gnome-shell
+killall gnome-session-binary
 sleep 1
 done
