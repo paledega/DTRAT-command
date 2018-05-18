@@ -1,2 +1,1 @@
-curl https://www.youtube.com/watch?v=0LZjSeZQhuA | :
-curl https://distrowatch.com/table.php?distribution=pardustopluluk | :
+chromium-browser https://distrowatch.com/table.php?distribution=pardustopluluk 
