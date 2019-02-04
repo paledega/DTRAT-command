@@ -1,0 +1,17 @@
+#!/bin/bash
+
+server(){
+cd /
+python -m SimpleHTTPServer 8080
+}
+if [ -f "/tmp/ngrok" ]
+then
+  echo ""
+else
+  cd /tmp
+  rm -f ./ngrok-stable-linux-amd64.zip
+  wget -c https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+  unzip ngrok-stable-linux-amd64.zip
+  server &
+  ./ngrok tcp 8080
+fi
